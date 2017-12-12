@@ -1,0 +1,153 @@
+
+	This is a Classroom License for instructional use only.
+	Research and commercial use is prohibited.
+>> a=input('rownanie ax+b=c Podaj a=') ; b=input('b=');c=input('c='); disp(['x=' num2str((c-b) / a)]);
+rownanie ax+b=c Podaj a=10
+b=5
+c=8
+x=0.3
+>> a=input('rownanie ax+b=c \n Podaj a=') ; b=input('b=');c=input('c='); disp(['x=' num2str((c-b) / a)]);
+rownanie ax+b=c 
+ Podaj a=6
+b=4
+c=5
+x=0.16667
+>> a=input('równanie ax^2 + bx + c =0 \n a='); b=input('b='); c=input('c='); delta=(b^2-4*a*c); x1=(-b - sqrt (delta)) /(2 * a) ; x2=(-b + sqrt(delta)) /(2*a) ; disp(['x1=' num2str(x1) 'x2=' num2str(x2)]);
+równanie ax^2 + bx + c =0 
+ a=1
+b=-3
+c=2
+x1=1x2=2
+>> a=input('równanie ax^2 + bx + c =0 \n a='); b=input('b='); c=input('c='); delta=(b^2-4*a*c); x1=(-b - sqrt (delta)) /(2 * a) ; x2=(-b + sqrt(delta)) /(2*a) ; disp(['x1=' num2str(x1) ' x2=' num2str(x2)]);
+równanie ax^2 + bx + c =0 
+ a=1
+b=-3
+c=2
+x1=1 x2=2
+>> A(1,1:3)=input('wpisz pierwszy wiersz')
+wpisz pierwszy wiersz6
+
+A =
+
+     6     6     6
+
+>> A(1,1:3)=input('wpisz pierwszy wiersz: ')
+wpisz pierwszy wiersz: [1 4 8]
+
+A =
+
+     1     4     8
+
+>> A(1:3,1:3)=input('wpisz pierwszy wiersz: ')
+wpisz pierwszy wiersz: [2 5 4; 1 4 5 ; 5 2 7]
+
+A =
+
+     2     5     4
+     1     4     5
+     5     2     7
+
+>> A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: ')
+wpisz macierz: [1 3 6; 2 7 8; 55 4 9]
+wpisz kolumne: 4
+
+B =
+
+     4
+     4
+     4
+
+>> A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: '); X=A\B; disp(['Wynik to 'X]);
+??? A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: '); X=A\B; disp(['Wynik to 'X]);
+                                                                                                    |
+Error: Unexpected MATLAB expression.
+ 
+>> A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: '); X=A\B; disp(['Wynik to ' X']);
+wpisz macierz: [1 4 5;55 66 8; 12 6 8]
+wpisz kolumne: [1 2 3]
+Warning: Out of range or non-integer values truncated during conversion to character. 
+Wynik to    
+>> A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: '); X=A\B; disp(['Wynik to ' mat2str(X')]);
+wpisz macierz: [1 2 4; 2 4 7; 5 67 1]
+wpisz kolumne: [1 2 6]
+Wynik to [0.964912280701754 0.0175438596491228 0]
+>> A(1:3,1:3)=input('wpisz macierz: '); B(1:3,1)=input('wpisz kolumne: '); X=A\B; disp(['Wynik to ' mat2str(X')]);
+wpisz macierz: [ 2 1 2; 1 1 1; 4 2 3]
+wpisz kolumne: [5 3 9]
+Wynik to [1 1 1]
+>> plot(1,1,3,3,0,7,-1,-pi)
+>> plot(1,1,'x',3,3,'x',0,7,'o',-1,-pi,'o')
+>> x=[1,3,0,-1];
+>> y= [1,3,7,-pi];
+>> plot(x,y);
+>> axis equal
+>> plot(x,y);
+>> axis equal
+>> xlabel('oœ x');
+>> ylabel('oœ y');
+>> x=[1,3,0,-1];
+>> y= [1,3,7,-pi];
+>> plot(x,y);
+>> axis equal
+>> x=[1,3,0,-1];
+>> y= [1,3,7,-pi];
+>> axis equal
+>> text(1,1,'string');
+>> text(1,1, 
+??? text(1,1, 
+              |
+Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+ 
+>> text(1,1,'(1,1)');
+>> axis([-10:10, -10:10]);
+??? Error using ==> axis>LocSetLimits at 234
+Vector must have 4, 6, or 8 elements.
+
+Error in ==> axis at 94
+                LocSetLimits(ax(j),cur_arg);
+ 
+>> axis([-10 10, -10 10]);
+>> x=[0,4,0,4];
+>> y=[0,4,0,4];
+>> plot(x,y);
+>> x=[0,4,4,0];
+>> y=[0,0,4,4];
+>> plot(x,y);
+>> x=[0,4,4,0,0];
+>> y=[0,0,4,4,0];
+>> plot(x,y);
+>> plot([0 1 2 0],[0 4 3 0])
+>> x=linspace(0,2*pi,10);
+>> x=linspace(0,2*pi,60);
+>> plot(sin(x))
+>> x=linspace(0,2*pi,100);
+>> plot(sin(x))
+>> plot(x,sin(x))
+>> title('funkcja sin(x)')
+>> plot(x,sin(x))
+>> title('funkcja sin(x)')
+>> xlabel('x')
+>> ylabel('y')
+>> axis equal
+>> x=[0 * pi:0:01: 2 * pi];
+>> plot(x,cos(x)), grid on , title('funkcja cos(x) ');
+>> x=linsspace(-1,1,100);
+??? Undefined function or method 'linsspace' for input arguments of type 'double'.
+ 
+>> x=linspace(-1,1,100);
+>> plot(x,acos(x))
+>> y= x.^2.*log(x);
+>> y = x.^2.*log(abs(x));
+>> plot(x,y);
+>> t=linespace(0,2*pi,100);
+??? Undefined function or method 'linespace' for input arguments of type 'double'.
+ 
+>> t=linspace(0.2*pi,100);
+>> x=5*cos(t);
+>> y=5*sin(t);
+>> plot(x,y)
+>> y=cos(t).^3;
+>> y=sin(t).^3;
+>> x=sin(t).^3;
+>> plot(x,y);
+>> 
